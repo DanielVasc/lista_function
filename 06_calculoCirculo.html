@@ -9,10 +9,23 @@
 
     //Entrada
 
+    const luiz = Number(prompt(`qual o raio do circulo`));
 
     //Processamento
 
+    function calculeA(r){
+       return 3.14 * (r * r)
+    }
+
+    function calculeP(r){
+       return 2 * 3.14 * r
+    }
+
+    const Gustavo = calculeA(luiz);
+    const Yohana = calculeP(luiz);
 
     //Saída
+
+    alert(`a área do circas é ${Gustavo} e o perimetro é ${Yohana}`)
 
 </script>

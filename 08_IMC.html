@@ -7,10 +7,18 @@
 
     //Entrada
 
+    const Lopes = Number(prompt(`quanto voce pesa em KG`).trim());
+    const lusca = Number(prompt(`qual sua altura em Metros`).trim());
 
     //Processamento
 
+    function IMC(p, a){
+        return p / (a * a);
+    }
 
+    const quayquas = IMC(Lopes, lusca)
     //Saída
+
+    alert(`o seu imc é ${quayquas}`)
 
 </script>
