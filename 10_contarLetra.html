@@ -7,10 +7,29 @@
 
     //Entrada
 
+    const frase = prompt("Digite uma frase ou palavra:");
+    const letra = prompt("Digite uma letra:");
 
     //Processamento
 
+    function contarLetra(frase, letra) {
+        const fraseMinuscula = frase.toLowerCase();
+        const letraMinuscula = letra.toLowerCase();
+
+        let contador = 0;
+
+        for (let index = 0; index < fraseMinuscula.length; index++) {
+            if (fraseMinuscula[index] === letraMinuscula) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+
+    const quantidade = contarLetra(frase, letra);
 
     //Saída
+    alert(`A letra "${letra}" aparece ${quantidade} vezes na frase "${frase}".`);
 
 </script>
